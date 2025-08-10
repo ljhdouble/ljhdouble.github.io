@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp 调查问卷</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">freeCodeCamp 调查问卷</h1>
+            <p id="description"><em>感谢您抽出时间帮助我们改进平台</em></p>
+        </div>
+        <div class="main">
+            <form action="" id="survey-form">
+                <div class="section">
+                    <label for="name" id="name-label">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+
+                    <label for="email" id="email-label">邮箱</label>
+                    <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+
+                    <label for="number" id="number-label">年龄（可选）</label>
+                    <input type="number" id="number" name="number" placeholder="年龄" min="18" max="120">
+
+                    <label for="dropdown">以下哪个选项最能描述您当前的身份？</label>
+                    <select id="dropdown" name="role">
+                        <option value="">请选择当前身份</option>
+                        <option value="student">学生</option>
+                        <option value="full-time-job">全职工作</option>
+                        <option value="full-time-learner">全职学习者</option>
+                        <option value="prefer-not-to-say">不愿透露</option>
+                        <option value="other">其他</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>您会向朋友推荐 freeCodeCamp 吗？</legend>
+                    <label><input type="radio" name="recommendation" value="definitely"> 肯定会</label>
+                    <label><input type="radio" name="recommendation" value="maybe"> 可能会</label>
+                    <label><input type="radio" name="recommendation" value="not-sure"> 不确定</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>您最喜欢 freeCodeCamp 的哪项功能？</legend>
+                    <label for="features">
+                        <select name="features" id="features">
+                            <option value="" disabled selected>请选择一个选项</option>
+                            <option value="challenges">挑战练习</option>
+                            <option value="projects">项目实战</option>
+                            <option value="community">社区交流</option>
+                            <option value="open-source">开源项目</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>您希望看到哪些方面的改进？（可多选）</legend>
+                    <label for="improvement">
+                        <input type="checkbox" name="improvement" value="Front-end Projects" id="improvement" />
+                        前端项目
+                    </label>
+                    <label for="Back-end Projects">
+                        <input type="checkbox" name="Back-end Projects" value="Back-end Projects"
+                            id="Back-end Projects" />
+                        后端项目
+                    </label>
+                    <label for="Data Visualization">
+                        <input type="checkbox" name="Data Visualization" value="Data Visualization"
+                            id="Data Visualization" />
+                        数据可视化
+                    </label>
+                    <label for="Challenges">
+                        <input type="checkbox" name="Challenges" value="Challenges" id="Challenges" />
+                        挑战练习
+                    </label>
+                    <label for="Open Source Community">
+                        <input type="checkbox" name="Open Source Community" value="Open Source Community"
+                            id="Open Source Community" />
+                        开源社区
+                    </label>
+                    <label for="Gitter help rooms">
+                        <input type="checkbox" name="Gitter help rooms" value="Gitter help rooms"
+                            id="Gitter help rooms" />
+                        Gitter 帮助房间
+                    </label>
+                    <label for="Videos">
+                        <input type="checkbox" name="Videos" value="Videos" id="Videos" />
+                        教学视频
+                    </label>
+                    <label for="City Meetups">
+                        <input type="checkbox" name="City Meetups" value="City Meetups" id="City Meetups" />
+                        城市聚会
+                    </label>
+                    <label for="Wiki">
+                        <input type="checkbox" name="Wiki" value="Wiki" id="Wiki" />
+                        维基文档
+                    </label>
+                    <label for="Forum">
+                        <input type="checkbox" name="Forum" value="Forum" id="Forum" />
+                        论坛讨论
+                    </label>
+                    <label for="Additional Comments">
+                        <input type="checkbox" name="Additional Comments" value="Additional Comments"
+                            id="Additional Comments" />
+                        额外评论
+                    </label>
+                </fieldset>
+
+                <label for="comments">任何意见或建议？</label>
+                <textarea id="comments" name="comments" placeholder="请在此输入您的意见..."></textarea>
+
+                <button type="submit" id="submit">提交</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+    
